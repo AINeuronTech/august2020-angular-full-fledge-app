@@ -1,0 +1,18 @@
+.sidenav-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sidenav-items {
+  height: 70vh;
+}
+
+.sidenav-footer {
+  height: 30vh;
+}
+
+mat-nav-list {
+  margin-left: 10px;
+}

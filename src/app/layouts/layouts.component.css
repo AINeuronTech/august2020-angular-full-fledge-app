@@ -1,0 +1,29 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+mat-sidenav-container {
+  height: 100vh;
+}
+
+mat-sidenav {
+  min-width: 250px;
+}
+
+.sidenav-content {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loginSection {
+  margin-right: 28px;
+}

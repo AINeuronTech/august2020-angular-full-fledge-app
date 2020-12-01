@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Feedback</h1>
+<div mat-dialog-content>
+  <p>Please send us your feedback:</p>
+  <mat-form-field>
+    <mat-label>Feedback</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancelClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Send feedback</button>
+</div>

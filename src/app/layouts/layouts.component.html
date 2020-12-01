@@ -1,0 +1,27 @@
+<div class="app-wrapper">
+  <mat-toolbar color="primary">
+    <div>
+      <button mat-icon-button color="ascent" (click)="toggle()">
+        <mat-icon style="font-size: 26px;">menu</mat-icon>
+      </button>
+    <button mat-button style="margin-left: -10px; font-size: 20px;" (click)="goToDashboard()">{{ title }}</button>
+    </div>
+	  <div class="loginSection">
+      <button mat-button>
+        <mat-icon style="font-size: 26px;">person</mat-icon>
+        Login
+      </button>
+	  </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav [mode]="media.isActive('xs') ? 'over' : 'side'" position="start" [opened]="!media.isActive('xs')">
+      <app-sidenav></app-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="sidenav-content">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+<div>

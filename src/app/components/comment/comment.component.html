@@ -1,0 +1,17 @@
+  <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px" *ngIf="commentsInput">
+  <mat-accordion>
+  <mat-expansion-panel *ngFor="let comment of commentsInput">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+         {{comment.id}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{comment.name}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+      {{comment.email}}
+      {{comment.body}}
+  </mat-expansion-panel>
+
+</mat-accordion>
+  </div>

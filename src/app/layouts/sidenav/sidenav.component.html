@@ -1,0 +1,52 @@
+<mat-nav-list clas="sidenav-container">
+  <section class="sidenav-items">
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+      <mat-icon>dashboard</mat-icon>
+      <span style="margin-left: 12px">Dashboard</span>
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/comments">
+      <mat-icon>comment</mat-icon>
+      <span style="margin-left: 12px">Comments</span>
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">
+      <mat-icon>article</mat-icon>
+      <span style="margin-left: 12px">Article</span>
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/albums">
+      <mat-icon>album</mat-icon>
+      <span style="margin-left: 12px">Albums</span>
+    </a>
+    <div style="margin-top: 30px;"></div>
+    <mat-divider></mat-divider>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/users">
+        <mat-icon>group</mat-icon>
+        <span style="margin-left: 12px">Users</span>
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/todos">
+        <mat-icon>add_task</mat-icon>
+        <span style="margin-left: 12px">Todos</span>
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/photos">
+        <mat-icon>insert_photo</mat-icon>
+        <span style="margin-left: 12px">Photos</span>
+    </a>
+    <!--<div style="margin-top: 230px;"></div>-->
+    </section>
+    <section class="sidenav-footer">
+    <mat-divider></mat-divider>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/settings">
+        <span style="margin-right: 12px">Settings</span>
+        <mat-icon>settings</mat-icon>
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/feedback">
+        <span style="margin-right: 12px">Send feedback</span>
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" href="https://support.google.com/googlenews/?p=web&hl=en&authuser=0&dark=0#topic=7688381" target="_blank">
+        <span style="margin-right: 12px">Help</span>
+        <mat-icon>launch</mat-icon>
+    </a>
+    <div style="margin-left: 12px;">
+      Copyright 2020, Angular News
+    </div>
+    </section>
+</mat-nav-list>
