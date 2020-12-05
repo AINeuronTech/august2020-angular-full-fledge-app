@@ -16,7 +16,8 @@ export class FeedbackComponent implements OnInit {
 
   ngOnInit(): void {
     const dialogRef = this.dialog.open(FeedbackDialog, {
-      width: '400px',
+      width: '300px',
+      height: '400px',
       data: { feedback: this.feedback },
     });
 

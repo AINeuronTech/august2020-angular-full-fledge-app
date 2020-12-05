@@ -1,0 +1,31 @@
+<h1>TODOS:</h1>
+
+<mat-tab-group (selectedTabChange)="onTabChanged($event)">
+  <mat-tab label="All">
+     <mat-list>
+      <mat-list-item *ngFor="let todo of todos">
+        <mat-icon mat-list-icon>add_task</mat-icon>
+        <div mat-line>{{todo.title}}</div>
+        <div mat-line> {{todo.completed}} </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-tab>
+  <mat-tab label="Completed">
+     <mat-list>
+      <mat-list-item *ngFor="let todo of filteredTodods">
+        <mat-icon mat-list-icon>add_task</mat-icon>
+        <div mat-line>{{todo.title}}</div>
+        <div mat-line> {{todo.completed}} </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-tab>
+  <mat-tab label="Todo">
+     <mat-list>
+      <mat-list-item *ngFor="let todo of filteredTodods">
+        <mat-icon mat-list-icon>add_task</mat-icon>
+        <div mat-line>{{todo.title}}</div>
+        <div mat-line> {{todo.completed}} </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-tab>
+</mat-tab-group>

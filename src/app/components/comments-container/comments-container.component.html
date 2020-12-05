@@ -1,3 +1,10 @@
+<div>
+  <button mat-button (click)="onLogin()">Login to see comments</button>
+</div>
+
+<div *ngIf="isLoggedIn">
 <div *ngIf="comments" class="comments-container">
   <app-comment [commentsInput]="comments"></app-comment>
 </div>
+</div>
+

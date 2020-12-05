@@ -8,7 +8,9 @@ import { HelpComponent } from './components/help/help.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { PhotosContainerComponent } from './components/photos-container/photos-container.component';
 import { PostsContainerComponent } from './components/posts-container/posts-container.component';
+import { TodosComponent } from './components/todos/todos.component';
 import { UsersContainerComponent } from './components/users-container/users-container.component';
+import { VideosComponent } from './components/videos/videos.component';
 
 const routes: Routes = [];
 
@@ -21,6 +23,8 @@ const routes: Routes = [];
       { path: 'users', component: UsersContainerComponent },
       { path: 'photos', component: PhotosContainerComponent },
       { path: 'feedback', component: FeedbackComponent },
+      { path: 'todos', component: TodosComponent },
+      { path: 'videos', component: VideosComponent },
       { path: '', component: DashboardComponent },
       { path: '**', component: PageNotFoundComponent },
     ]),

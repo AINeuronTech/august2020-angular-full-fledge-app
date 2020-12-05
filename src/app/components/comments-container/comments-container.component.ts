@@ -9,11 +9,16 @@ import { CommentsService } from 'src/app/services/comments.service';
 })
 export class CommentsContainerComponent implements OnInit {
   comments: IComment[];
+  isLoggedIn = false;
   constructor(private commentsService: CommentsService) {}
 
   ngOnInit(): void {
     this.commentsService.getComments().subscribe((data) => {
       this.comments = data;
     });
+  }
+
+  onLogin() {
+    this.isLoggedIn = !this.isLoggedIn;
   }
 }

@@ -1,1 +1,26 @@
-<p>posts-container works!</p>
+<!--<div class="posts-container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-between center" fxLayoutGap="25px">
+  <mat-card *ngFor="let state of states" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{state.state}}</mat-card-title>
+      <mat-card-subtitle>{{state.capital_city}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="state.state_flag_url">
+    <mat-card-content>
+      <p>
+        <a target="_blank" href="{{state.website}}">{{state.website}}</a>
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>-->
+
+
+<div class="grid grid-pad">
+    <a *ngFor="let state of states" class="col-1-4" target="_blank" href="{{state.website}}">
+        <div class="module hero">
+            <h4>{{state.state}}</h4>
+            <h2>{{state.capital_city}}</h2>
+            <!--<img [src]="state.state_flag_url">-->
+        </div>
+    </a>
+</div>

@@ -1,3 +1,14 @@
 .card-body {
   text-align: center;
 }
+
+.album-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.example-header-image {
+  background-image: url('https://previews.123rf.com/images/kirucha/kirucha1810/kirucha181000069/112513716-set-of-simple-snowflake-icons-a-large-set-of-snowflakes-for-winter-design-.jpg');
+  background-size: cover;
+}

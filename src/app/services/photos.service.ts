@@ -11,7 +11,6 @@ export class PhotosService {
   constructor(private http: HttpClient) {}
 
   getPhotos(): Observable<IPhoto[]> {
-    debugger
     return this.http.get<IPhoto[]>(this.photosUrl);
   }
 }

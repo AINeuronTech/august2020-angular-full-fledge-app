@@ -1,8 +1,11 @@
-<p>albums-container works!</p>
+<div class="album-header">
+  <h1 style="margin-right: 20px;">Snowflakes</h1>
+  <div mat-card-avatar class="example-header-image"></div>
+</div>
+
 <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px">
-  <mat-card *ngFor="let member of members" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" >
+  <mat-card *ngFor="let member of members" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{member.title}}</mat-card-title>
       <mat-card-subtitle>{{member.subtitle}}</mat-card-subtitle>
     </mat-card-header>

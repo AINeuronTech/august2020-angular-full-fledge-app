@@ -27,7 +27,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { HelpComponent } from './components/help/help.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-
+import { TodosComponent } from './components/todos/todos.component';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
+import { VideosComponent } from './components/videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +49,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     HelpComponent,
     DashboardComponent,
     PageNotFoundComponent,
+    TodosComponent,
+    VideosComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,6 +64,9 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     MatDialogModule,
     MatFormFieldModule,
     MatButtonModule,
+    MatListModule,
+    MatIconModule,
+    MatTabsModule,
   ],
   entryComponents: [FeedbackComponent, FeedbackDialog],
   providers: [PhotosService, PostsService, CommentsService],
